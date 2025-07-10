@@ -13,7 +13,7 @@ def load_data():
 
 try:
   df = load_data()
-  st.success(:Data loaded successfully!")
+  st.success("Data loaded successfully!")
   st.dataframe(df)
 except Exception as e:
   st.error(f"Failed to load data: {e}")
