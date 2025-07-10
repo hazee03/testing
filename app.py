@@ -27,7 +27,7 @@ c = st.text_input("Enter c")
 
 if st.button("Upload to GitHub"):
   df = pd.DataFrame([{"a": a, "b": b, "c": c}])
-  csv = df.to_csv(indec=False)
+  csv = df.to_csv(index=False)
   content = base64.b64encode(csv.encode()).decode()
 
 url = "https://api.github.com/repos/hazee03/testing/contents/data2.csv"
