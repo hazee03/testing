@@ -43,4 +43,4 @@ r = requests.put(url, headers=headers, json=payload)
 if r.status_code in [200,201]:
     st.success("data uploaded!")
 else:
-    st.error("Failed tp upload")
+    st.error("Failed to upload")
